@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="CSS/style-reset.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div id="todo">
+			<div id="titulo">
+				<h1>a</h1>
+			</div>
+            <section id="index">
+                <div id="principal">
+                    <div id="bloque-canvas" >
+                    </div>
+                    <div id="caja-botones">
+                        <div id="relleno1">
+                        </div>
+                        <button id="iniciar-juego" class="boton-azul" onclick="iniciarJuego()">Iniciar Juego </button>
+                        <br>
+                        <button id="ir-a-agregar-palabra" class="boton-blanco" onclick="iniciarAgregar()">Agregar Palabra</button>
+                    </div>
+                </div>
+            </section>
+            <section id="agregarPalabra">
+                <div id="principal">
+                    <div id="bloque-canvas" >
+                        <div id="contenido-agregar-palabra">
+                            <input type="password" id="palabra-para-agregar" placeholder="Escriba una palabra" required >
+                        </div>
+                    </div>
+                    <div id="caja-botones">
+                        <button id="agregar-palabra" class="boton-azul" onclick="agregarPalabra()">Guardar y Empezar</button>
+                        <br>
+                        <button id="cancelar" class="boton-blanco" onclick="irAlIndex()">Cancelar</button>
+                    </div>     
+               </div>
+            </section>
+            <section id="juegoAhorcado">
+                <div id="principal">
+                    <div id="bloque-canvas">
+                        <canvas width= height="600"></canvas>
+                         <input id="letra-presionada" type="text" style="text-transform:uppercase;" pattern="[A-Z]" maxlength="1">
+                         <textarea id="resultado" onfocus="this.blur()" readonly="readonly"></textarea>
+                    </div>      
+                    <div id="caja-botones">                     
+                        <button  class="boton-azul" onclick="iniciarJuego()">Volver a Jugar</button>
+                        <br>
+                        <button class="boton-blanco" onclick="rendirse()">Rendirse</button>                           
+                    </div>
+                    	
+                </div>
+            </section>
+		</div>
+        <script src="JS/juegoAhorcado.js"></script>
+    </body>
+
+
+
+
+</html>
+
+
+
+

@@ -1,0 +1,110 @@
+body{
+    width:100vw;
+    
+}
+#todo{
+    width: 90vw;
+    height: 90vh;
+    display:flex
+}
+#titulo{
+    width: 10vw;
+    height: 90vh
+}
+h1{
+    font-size: 7.5vw;
+    font-weight: bold;
+    color: #0A3871;
+    padding-left:2.5vw ;
+}
+#principal{
+    width:90vw;
+    height:100vh
+}
+#bloque-canvas{
+    width: 90vw;
+    height: 70vh; 
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+#caja-botones{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boton-azul{
+    width: 32vw;
+    padding: 1.5vw;
+    font-size: 2.5vw;
+    border-radius: 2vw;
+    background: #0A3871;
+    border-color:#04336d;
+    color: azure;
+    text-transform: uppercase;
+    font-weight: bold; 
+    border-style:solid;
+}
+.boton-azul:hover{
+    background: #124b91;
+    border-color:#ffffff ;
+    border-radius:1.5vw;
+}
+.boton-blanco{
+    width: 32vw;
+    padding: 1.5vw;
+    font-size: 2.5vw;
+    border-radius: 2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0A3871;  
+    background-color: azure;
+    border-color: rgb(204, 231, 231);
+    border-style:solid;
+}
+.boton-blanco:hover{
+    background:rgb(221, 235, 235);
+    border-color:#FFFFFF ;
+    border-radius:1.5vw;
+
+}
+/* Agregar palabra*/
+
+#contenido-agregar-palabra{
+    width: 100%;
+    height: 80%;
+    display: flex; 
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+}
+#palabra-para-agregar{
+    width: 34vw;
+    height: fit-content;
+    font-size:3vw;
+}
+/* Juego del ahorcado*/
+canvas{
+    height: 80%;
+    background-color:rgb(16, 212, 212);
+    font-size: 4vw;
+}
+#letra-presionada{
+    display: block;
+    opacity:0;
+    height:0
+}
+#resultado{
+    width:32vw;
+    height: fit-content;
+    border-style: none;
+    font-size:4vw;
+    resize: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  
+}
